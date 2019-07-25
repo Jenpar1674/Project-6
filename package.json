@@ -1,0 +1,29 @@
+{
+  "name": "project-6",
+  "version": "1.0.0",
+  "description": "Creating a portfolio site to showcase my work",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jenpar1674/Project-6.git"
+  },
+  "keywords": [
+    "express",
+    "node"
+  ],
+  "author": "Jennifer Parker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jenpar1674/Project-6/issues"
+  },
+  "homepage": "https://github.com/Jenpar1674/Project-6#readme"
+}
