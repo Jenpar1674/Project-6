@@ -1,20 +1,54 @@
-// we require express
 const express = require('express');
-// and execute it as a function in the app variable
 const app = express();
 
-// then make view engine settings
-app.set('view engine', 'pug');
-app.set('views', './views');
+const data = require('./data.json');
+const { projects } = data;
 
-// and use public directory as our static assets folder
+
+app.set("view engine", "pug");
 app.use('/static', express.static('public'));
+app.use('/static', express.static('images'));
 
-// I decided I want a separate routing file
-const routes = require('./router');
-// so I use it
-app.use(routes);
 
+// routing
+app.get('/', (req, res, next) => {
+  res.render('index', { projects });
+});
+
+app.get('/about', (req, res, next) => {
+  res.render('about');
+});
+
+app.get('/project_:i([0-4])', (req, res, next) => {
+  const { i } = req.params;
+  const { imageloc } = projects[i];
+  const { project_name } = projects[i];
+  const { description } = projects[i];
+  const { technologies } = projects[i];
+  const { live_link } = projects[i];
+  const { github_link } = projects[i];
+  res.render('project', {project_name, description, technologies, live_link, github_link, imageloc});
+});
+
+
+// catching 404 errors
+app.use((req, res, next) => {
+  let err = new Error();
+  err.status = 404;
+  err.message = "Sorry. Page Not Found :/";
+  next(err);
+});
+
+// error handling
+app.use((err, req, res, next) => {
+  if(!err.status){
+    err.status = 500;
+    err.message = "Sorry. An Error Occurred :/";
+  }
+  res.locals.error = err;
+  res.status(err.status);
+  res.render('error');
+});
 // and finally listen on port 3000
 app.listen(3000, () => {
   // and print a message if everything is successful
