@@ -33,15 +33,15 @@
           ]
        },
        {  
-          "id":"003",
+          "id":"Techedegree-Project-3",
           "project_name":"description",
           "technologies":[  
              "item1",
              "item2",
              "item3"
           ],
-          "live-link":"http://",
-          "github_link":" ",
+          "live-link":"http://file:///C:/Codes/Techdegree-project-3-form-validation/index.html",
+          "github_link":"https://github.com/Jenpar1674/Techedegree-Project-3.git ",
           "image_urls":[  
              "images/i001.jpg",
              "images/i002.jpg"
