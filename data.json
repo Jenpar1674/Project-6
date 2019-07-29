@@ -14,8 +14,8 @@
           "live-link":"http:/https://jenpar1674.github.io/My-Project-1//",
           "github_link":"https://github.com/Jenpar1674/My-Project-1.git ",
           "image_urls":[  
-             "/images/project1.0.PNG",
-             "/images/project1.1.PNG"
+             "/images/project1.1.PNG",
+             "/images/project1.0.PNG"
           ]
        },
        {  
@@ -31,23 +31,23 @@
           "live-link":"https://jenpar1674.github.io/MyProject2/",
           "github_link":"https://github.com/Jenpar1674/MyProject2.git",
           "image_urls":[  
-             "images/i001.jpg",
-             "images/i002.jpg"
+             "/images/project2.0.PNG",
+             "/images/project2.1.PNG"
           ]
        },
        {  
           "id":"003",
           "project_name":"Interactive Form ",
           "technologies":[  
-             "item1 ",
-             "item2",
-             "item3"
+             "Javascript ",
+             "HTML",
+             "CSS"
           ],
           "live-link":"https://jenpar1674.github.io/Techedegree-Project-3/",
           "github_link":"https://github.com/Jenpar1674/Techedegree-Project-3.git ",
           "image_urls":[  
-             " ",
-             ""
+             "/images/project3.0.PNG ",
+             "/images/project3.1.PNG"
           ]
        },
        {  
