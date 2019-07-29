@@ -4,14 +4,15 @@
     "projects":[  
        {  
           "id":"001",
-          "project_name":"description",
+          "project_name":"A Random Quote Generator ",
+          "description":"A program that displays a randomly selected quote each time the user clicks a button.",
           "technologies":[  
-             "item1",
-             "item2",
-             "item3"
+             "JavaScript syntax and data structures",
+             "HTML",
+             "CSS"
           ],
-          "live-link":"http://",
-          "github_link":" ",
+          "live-link":"http:/https://jenpar1674.github.io/My-Project-1//",
+          "github_link":"https://github.com/Jenpar1674/My-Project-1.git ",
           "image_urls":[  
              "images/i001.jpg",
              "images/i002.jpg"
@@ -19,36 +20,38 @@
        },
        {  
           "id":"002",
-          "project_name":"description",
-          "technologies":[  
-             "item1",
-             "item2",
-             "item3"
+          "project_name":"List Pagination and Filtering ",
+          "description":"Using JavaScript to divide a long list into a series of pages and improving the user experience of a web page.",
+          "technologies":[
+             "JavaScript",
+             "HTML",
+             "CSS",
+             "ES2015"
           ],
-          "live-link":"http://",
-          "github_link":" ",
+          "live-link":"https://jenpar1674.github.io/MyProject2/",
+          "github_link":"https://github.com/Jenpar1674/MyProject2.git ",
           "image_urls":[  
              "images/i001.jpg",
              "images/i002.jpg"
           ]
        },
        {  
-          "id":"Techedegree-Project-3",
-          "project_name":"description",
+          "id":"003",
+          "project_name":"Interactive Form ",
           "technologies":[  
-             "item1",
+             "item1 ",
              "item2",
              "item3"
           ],
-          "live-link":"http://file:///C:/Codes/Techdegree-project-3-form-validation/index.html",
+          "live-link":"https://jenpar1674.github.io/Techedegree-Project-3/",
           "github_link":"https://github.com/Jenpar1674/Techedegree-Project-3.git ",
           "image_urls":[  
-             "images/i001.jpg",
+             " ",
              "images/i002.jpg"
           ]
        },
        {  
-          "id":"004",
+          "id":"OOP Game Show App",
           "project_name":"description",
           "technologies":[  
              "item1",
