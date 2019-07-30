@@ -38,6 +38,7 @@
        {  
           "id":"003",
           "project_name":"Interactive Form ",
+          "description":"",
           "technologies":[  
              "Javascript ",
              "HTML",
@@ -55,12 +56,12 @@
           "project_name":"OOP Game Show App",
           "description":"",
           "technologies":[  
-             "item1",
-             "item2",
-             "item3"
+             "JavaScript",
+             "HTML",
+             "CSS"
           ],
-          "live-link":"http://",
-          "github_link":" ",
+          "live-link":"https://jenpar1674.github.io/Project-4/",
+          "github_link":"https://github.com/Jenpar1674/Project-4.git ",
           "image_urls":[  
              "images/i001.jpg",
              "images/i002.jpg"
