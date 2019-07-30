@@ -21,13 +21,13 @@ app.get('/about', (req, res, next) => {
 
 app.get('/project_:i([0-4])', (req, res, next) => {
   const { i } = req.params;
-  const { imageloc } = projects[i];
+  const { image_urls } = projects[i];
   const { project_name } = projects[i];
   const { description } = projects[i];
   const { technologies } = projects[i];
   const { live_link } = projects[i];
   const { github_link } = projects[i];
-  res.render('project', {project_name, description, technologies, live_link, github_link, imageloc});
+  res.render('project', {project_name, description, technologies, live_link, github_link, image_urls});
 });
 
 
