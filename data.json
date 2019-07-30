@@ -11,7 +11,7 @@
              "HTML",
              "CSS"
           ],
-          "live-link":"http:/https://jenpar1674.github.io/My-Project-1//",
+          "live-link":"https://jenpar1674.github.io/My-Project-1/",
           "github_link":"https://github.com/Jenpar1674/My-Project-1.git ",
           "image_urls":[  
              "/static/images/project1.1.PNG",
@@ -51,9 +51,9 @@
           ]
        },
        {  
-          "id":"OOP Game Show App",
+          "id":"004",
+          "project_name":"OOP Game Show App",
           "description":"",
-          "project_name":"description",
           "technologies":[  
              "item1",
              "item2",
