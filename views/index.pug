@@ -21,8 +21,14 @@ block content
       //- Here's what the Pug for each project example should look like. 
 
       
+      each project in projects   
+
+        .cell
+
+            h1=post['position']
+
+            p.location=post['company']
       
-      .cell
         a(href='#')
           img.thumbnail(src='https://placehold.it/550x550')
           h5 Title
