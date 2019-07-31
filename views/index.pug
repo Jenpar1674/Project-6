@@ -21,15 +21,9 @@ block content
       //- Here's what the Pug for each project example should look like. 
 
       
-      each project in projects   
-
+     each val, index in projects
         .cell
-
-            h1=post['position']
-
-            p.location=post['company']
-      
-        a(href='#')
-          img.thumbnail(src='https://placehold.it/550x550')
-          h5 Title
+          a(href=`project/${projects[index].id}`)
+            img.thumbnail(src=`${projects[index].image_urls[0]}`)
+            h5=projects[index].project_name
       
