@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
 
-const data = require('./data.json');
-const projects = data.projects
+const { projects }  = require('./data.json');
+ 
 
 
 app.set("view engine", "pug");
@@ -22,14 +22,17 @@ app.get('/about', (req, res, next) => {
 
 // creating route to projects page
 
-app.get('/project/:id', (req, res) => res.render('project', {
+app.get('/project/:id', (req, res) => {
+res.render('project',{
   title: projects[req.params.id].project_name,
   description: projects[req.params.id].description,
   technologies: projects[req.params.id].technologies,
   liveLink: projects[req.params.id].live_link,
   githubLink: projects[req.params.id].github_link,
   image: projects[req.params.id].image_urls
-}));
+})});
+
+
 // app.get('/project_:i([0-4])', (req, res, next) => {
 //   const { i } = req.params;
 //   const { image_urls } = projects[i];
@@ -41,7 +44,7 @@ app.get('/project/:id', (req, res) => res.render('project', {
 //   res.render('project', {project_name, description, technologies, live_link, github_link, image_urls});
 // });
 
-// catching 404 errors
+//catching 404 errors
 app.use((req, res, next) => {
   let err = new Error();
   err.status = 404;
