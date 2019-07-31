@@ -12,7 +12,7 @@ app.use('/static', express.static('images'));
 
 // routing to index page
 app.get('/', (req, res, next) => {
-  res.render('index', { projects});
+  res.render('index', { projects });
 });
 
 //route to about pagenode 
