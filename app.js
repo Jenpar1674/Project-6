@@ -23,25 +23,14 @@ app.get('/about', (req, res, next) => {
 // creating route to projects page
 
 app.get('/project/:id', (req, res) => {
-
-  if (parseInt(req.params.id) > data.projects.length - 1){
-    const err = new Error('Invalid URL...');
-    err.status = 404;
-    return next(err);
-}
-res.render('project', {id: parseInt(req.params.id), data: data.projects});
-});
-
-  //res.render('project',{
-
-  
-  // title: projects[req.params.id].project_name,
-  // description: projects[req.params.id].description,
-  // technologies: projects[req.params.id].technologies,
-  // liveLink: projects[req.params.id].live_link,
-  // githubLink: projects[req.params.id].github_link,
-  // image: projects[req.params.id].image_urls
-//)});}
+res.render('project',{
+  title: projects[req.params.id].project_name,
+  description: projects[req.params.id].description,
+  technologies: projects[req.params.id].technologies,
+  liveLink: projects[req.params.id].live_link,
+  githubLink: projects[req.params.id].github_link,
+  image: projects[req.params.id].image_urls
+})});
 
 
 // app.get('/project_:i([0-4])', (req, res, next) => {
@@ -64,15 +53,15 @@ app.use((req, res, next) => {
 });
 
 // error handling
-app.use((err, req, res, next) => {
-  if(!err.status){
-    err.status = 500;
-    err.message = "Sorry. An Error Occurred :/";
-  }
-  res.locals.error = err;
-  res.status(err.status);
-  res.send('This page does not exist');
-});
+// app.use((err, req, res, next) => {
+//   if(!err.status){
+//     err.status = 500;
+//     err.message = "Sorry. An Error Occurred :/";
+//   }
+//   res.locals.error = err;
+//   res.status(err.status);
+//   res.send('This page does not exist');
+// });
 // and finally listen on port 3000
 app.listen(3000, () => {
   // and print a message if everything is successful
