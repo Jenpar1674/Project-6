@@ -52,16 +52,16 @@ app.use((req, res, next) => {
   next(err);
 });
 
-// error handling
-// app.use((err, req, res, next) => {
-//   if(!err.status){
-//     err.status = 500;
-//     err.message = "Sorry. An Error Occurred :/";
-//   }
-//   res.locals.error = err;
-//   res.status(err.status);
-//   res.send('This page does not exist');
-// });
+//error handling
+app.use((err, req, res, next) => {
+  if(!err.status){
+    err.status = 500;
+    err.message = "Sorry. An Error Occurred :/";
+  }
+  res.locals.error = err;
+  res.status(err.status);
+  res.send('This page does not exist');
+});
 // and finally listen on port 3000
 app.listen(3000, () => {
   // and print a message if everything is successful
