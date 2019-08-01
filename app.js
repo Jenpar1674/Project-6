@@ -23,14 +23,25 @@ app.get('/about', (req, res, next) => {
 // creating route to projects page
 
 app.get('/project/:id', (req, res) => {
-res.render('project',{
-  title: projects[req.params.id].project_name,
-  description: projects[req.params.id].description,
-  technologies: projects[req.params.id].technologies,
-  liveLink: projects[req.params.id].live_link,
-  githubLink: projects[req.params.id].github_link,
-  image: projects[req.params.id].image_urls
-})});
+
+  if (parseInt(req.params.id) > data.projects.length - 1){
+    const err = new Error('Invalid URL...');
+    err.status = 404;
+    return next(err);
+}
+res.render('project', {id: parseInt(req.params.id), data: data.projects});
+});
+
+  //res.render('project',{
+
+  
+  // title: projects[req.params.id].project_name,
+  // description: projects[req.params.id].description,
+  // technologies: projects[req.params.id].technologies,
+  // liveLink: projects[req.params.id].live_link,
+  // githubLink: projects[req.params.id].github_link,
+  // image: projects[req.params.id].image_urls
+//)});}
 
 
 // app.get('/project_:i([0-4])', (req, res, next) => {

@@ -3,7 +3,7 @@
 {  
     "projects":[  
        {  
-          "id": 1,
+          "id": 0,
           "project_name":"A Random Quote Generator ",
           "description":"A program that displays a randomly selected quote each time the user clicks a button.",
           "technologies":[  
@@ -19,7 +19,7 @@
           ]
        },
        {  
-          "id": 2,
+          "id": 1,
           "project_name":"List Pagination and Filtering ",
           "description":"Using JavaScript to divide a long list into a series of pages and improving the user experience of a web page.",
           "technologies":[
@@ -36,7 +36,7 @@
           ]
        },
        {  
-          "id": 3,
+          "id": 2,
           "project_name":"Interactive Form ",
           "description":"",
           "technologies":[  
@@ -52,7 +52,7 @@
           ]
        },
        {  
-          "id": 4,
+          "id": 3,
           "project_name":"OOP Game Show App",
           "description":"",
           "technologies":[  
@@ -68,7 +68,7 @@
           ]
        },
        {  
-          "id": 5,
+          "id": 4,
           "project_name":"Public API Requests",
           "description":"Random User Generator API that builds an employee directory that shows employee details in a modal window",
           "technologies":
