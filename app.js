@@ -52,14 +52,12 @@ app.use((req, res, next) => {
   next(err);
 });
 
-//error handling
+
+
 app.use((err, req, res, next) => {
-  if(!err.status){
-    err.status = 500;
-    err.message = "Sorry. An Error Occurred :/";
-  }
   res.locals.error = err;
   res.status(err.status);
+  console.log(err);
   res.render('error');
 });
 // and finally listen on port 3000
