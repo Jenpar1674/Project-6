@@ -16,8 +16,8 @@
           "image_urls":[  
              "/static/images/project1.1.PNG",
              "/static/images/project1.0.PNG",
-             "/static/images/project1.0.PNG",
-             "/static/images/project1.0.PNG"
+             "/static/images/project1.3.PNG",
+             "/static/images/project1.4.PNG"
              
           ]
        },
@@ -52,9 +52,8 @@
           "github_link":"https://github.com/Jenpar1674/Techedegree-Project-3.git ",
           "image_urls":[  
              "/static/images/project3.0.PNG",
-             "/static/images/project3.1.PNG",
-             "/static/images/project3.2.PNG",
-             "/static/images/project3.3.PNG"
+             "/static/images/project3.1.PNG"
+             
 
              
           ]
