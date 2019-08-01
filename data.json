@@ -16,6 +16,7 @@
           "image_urls":[  
              "/static/images/project1.1.PNG",
              "/static/images/project1.0.PNG"
+             
           ]
        },
        {  
@@ -33,6 +34,7 @@
           "image_urls":[  
              "/static/images/project2.0.PNG",
              "/static/images/project2.1.PNG"
+             
           ]
        },
        {  
@@ -47,8 +49,12 @@
           "live_link":"https://jenpar1674.github.io/Techedegree-Project-3/",
           "github_link":"https://github.com/Jenpar1674/Techedegree-Project-3.git ",
           "image_urls":[  
-             "/static/images/project3.0.PNG ",
-             "/static/images/project3.1.PNG"
+             "/static/images/project3.0.PNG",
+             "/static/images/project3.1.PNG",
+             "/static/images/project3.2.PNG",
+             "/static/images/project3.3.PNG"
+
+             
           ]
        },
        {  
@@ -64,7 +70,11 @@
           "github_link":"https://github.com/Jenpar1674/Project-4.git ",
           "image_urls":[  
              "/static/images/project4.3.PNG",
-             "/static/images/project4.2.PNG"
+             "/static/images/project4.2.PNG",
+             "/static/images/project4.0.PNG",
+             "/static/images/project4.1.PNG"
+            
+
           ]
        },
        {  
@@ -81,7 +91,9 @@
           "github_link":"https://github.com/Jenpar1674/Project-5---API.git ",
           "image_urls":[  
              "/static/images/project5.0.PNG",
-             "/static/images/project5.1.PNG"
+             "/static/images/project5.1.PNG",
+             "/static/images/project5.2.PNG",
+             "/static/images/project5.3.PNG"
           ]
        }
     ]
