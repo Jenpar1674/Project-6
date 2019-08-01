@@ -60,7 +60,7 @@ app.use((err, req, res, next) => {
   }
   res.locals.error = err;
   res.status(err.status);
-  res.send('This page does not exist');
+  res.render('error');
 });
 // and finally listen on port 3000
 app.listen(3000, () => {
