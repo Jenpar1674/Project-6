@@ -443,7 +443,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: hsl(227, 10%, 55%);
+  background: rgba(102, 163, 233, 0.856);
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
