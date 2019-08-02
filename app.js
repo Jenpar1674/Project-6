@@ -33,16 +33,7 @@ res.render('project',{
 })});
 
 
-// app.get('/project_:i([0-4])', (req, res, next) => {
-//   const { i } = req.params;
-//   const { image_urls } = projects[i];
-//   const { project_name } = projects[i];
-//   const { description } = projects[i];
-//   const { technologies } = projects[i];
-//   const { live_link } = projects[i];
-//   const { github_link } = projects[i];
-//   res.render('project', {project_name, description, technologies, live_link, github_link, image_urls});
-// });
+
 
 //catching 404 errors
 app.use((req, res, next) => {
