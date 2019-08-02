@@ -13,8 +13,8 @@ block content
 
         
         
-      p.lead.text-light
-        | #{description}
+        p.lead.text-light
+          | #{description}
           
 
       .cell.portfolio-meta.small-6.medium-2.large-3
@@ -24,19 +24,16 @@ block content
          
         
      
-      ul 
+        ul 
           each tech in technologies
             li #{tech}
 
-      a.button.expanded(href=liveLink target="_blank") Live Demo
-      a.button.expanded(href=githubLink target="_blank") GitHub Repo
-    
-        
       
-       
-        //- each url in image_urls
-       
-    img.image(src=image[1], alt="picture")
-    img.image(src=image[2], alt="picture")
-    img.image(src=image[3],)
-    
+        a.button.expanded(href=liveLink target="_blank") Live Demo
+        a.button.expanded(href=githubLink target="_blank") GitHub Repo
+        br
+          
+      img.image(src=image[1], alt="picture")
+      img.image(src=image[2], alt="picture")
+      img.image(src=image[3],)
+      
